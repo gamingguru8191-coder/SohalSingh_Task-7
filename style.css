@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+nav {
+  width: 100%;
+  height: 10vh;
+  padding: 0 5vw;
+  background: #fdfdfd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #34495e;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #7f8c8d;
+  font-weight: 500;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: #67c2ff;
+}
+.user {
+  color: #67c2ff;
+  background: #e3f2fd;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 90vh;
+  padding: 10vh 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -50px  ;
+}
+.hero-content {
+  width: 40%;
+}
+.hero-content h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+.hero-content span {
+  color: #67c2ff;
+}
+.hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.btn {
+  background: #67c2ff;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: red;
+}
+.hero-img {
+  width: 48%;
+}
+.hero-img img {
+  width: 80%;
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+  /* Navbar text smaller */
+  .logo {
+    font-size: 20px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+.hero{
+  margin-top: -25vh;
+  /* position: relative;
+  left: -30px; */
+}
+  .user {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+
+  /* Hero section smaller */
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Hide navbar links */
+  nav ul {
+    display: none;
+  }
+
+  /* Hero column layout */
+  .hero {
+    flex-direction: column;
+    text-align: left;
+    height: 100px;
+    margin-top: -40px;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .hero-img img {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
+  
