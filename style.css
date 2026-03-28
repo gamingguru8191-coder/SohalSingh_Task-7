@@ -110,7 +110,7 @@ nav ul li a:hover {
   .hero {
     margin-top: -30vh;
     position: relative;
-    left: -20px;
+    left: -30px;
   }
   .user {
     font-size: 14px;
@@ -127,10 +127,13 @@ nav ul li a:hover {
   }
 
   .hero-img img {
-    width: 100%;
+    width: 90%;
   }
 }
-
+.btn {
+  padding: 15px 25px;
+  font-size: 12px;
+}
 @media (max-width: 600px) {
   /* Hide navbar links */
   nav ul {
@@ -147,6 +150,7 @@ nav ul li a:hover {
 
   .hero-content {
     width: 100%;
+    margin-left: 20px;
   }
 
   .hero-img {
