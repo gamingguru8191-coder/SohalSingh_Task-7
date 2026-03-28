@@ -6,8 +6,8 @@
 }
 body {
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 nav {
   width: 100%;
@@ -35,10 +35,10 @@ nav ul li a {
   transition: 0.3s;
 }
 nav ul li a:hover {
-  color: #67c2ff;
+  color: #32a4f0;
 }
 .user {
-  color: #67c2ff;
+  color: #32a4f0;
   background: #e3f2fd;
   padding: 10px 20px;
   border-radius: 10px;
@@ -64,7 +64,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 .hero-content span {
-  color: #67c2ff;
+  color: #32a4f0;
 }
 .hero-content p {
   font-size: 18px;
@@ -72,7 +72,7 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 .btn {
-  background: #67c2ff;
+  background: #32a4f0;
   color: white;
   padding: 15px 30px;
   border: none;
@@ -101,38 +101,50 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   /* Navbar text smaller */
   .logo {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   nav ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
   .hero {
-    margin-top: -30vh;
-    position: relative;
-    left: -30px;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 0px;
+    margin-left: -20px;
+    padding: 40px 5vw;
   }
   .user {
     font-size: 14px;
     padding: 6px 14px;
   }
-
   /* Hero section smaller */
+  .hero-content {
+    width: 55%;
+  }
   .hero-content h1 {
-    font-size: 25px;
+    font-size: 2.2rem;
   }
 
   .hero-content p {
-    font-size: 14px;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.4;
   }
-
+  .hero-img {
+    width: 45%;
+  }
   .hero-img img {
-    width: 90%;
+    width: 100%;
+    height: 100%;
   }
-}
-.btn {
-  padding: 15px 25px;
-  font-size: 12px;
+  .btn {
+    padding: 15px 30px;
+    font-size: 15px;
+    border-radius: 15px;
+  }
 }
 @media (max-width: 600px) {
   /* Hide navbar links */
@@ -144,17 +156,19 @@ nav ul li a:hover {
   .hero {
     flex-direction: column;
     text-align: left;
-    height: 100px;
-    margin-top: -40px;
+    height: auto;
+    margin-top: 0;
+    padding: 40px 5vw;
   }
 
   .hero-content {
     width: 100%;
-    margin-left: 20px;
+    margin: 0;
+    padding: 0 10px;
   }
 
   .hero-img {
-    width: 90%;
+    width: 80%;
     text-align: center;
     margin-top: 20px;
   }
@@ -164,14 +178,14 @@ nav ul li a:hover {
   }
 
   .hero-content h1 {
-    font-size: 27px;
+    font-size: 30px;
   }
 
   .hero-content p {
-    margin-top: -10px;
+    margin-top: 10px;
     line-height: 1.5;
-    font-size: 12px;
-    margin-bottom: 20px;
+    font-size: 11.5px;
+    margin-bottom: 25px;
   }
   .btn {
     padding: 15px 25px;
