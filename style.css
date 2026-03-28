@@ -52,7 +52,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -50px  ;
+  margin-top: -50px;
 }
 .hero-content {
   width: 40%;
@@ -84,6 +84,11 @@ nav ul li a:hover {
 }
 .btn:hover {
   background: red;
+  transform: translateY(-5px) scale(1.1);
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(249, 13, 13, 0.9);
+  cursor: pointer;
+  border-radius: 12px;
 }
 .hero-img {
   width: 48%;
@@ -102,11 +107,11 @@ nav ul li a:hover {
   nav ul li a {
     font-size: 14px;
   }
-.hero{
-  margin-top: -25vh;
-  /* position: relative;
-  left: -30px; */
-}
+  .hero {
+    margin-top: -30vh;
+    position: relative;
+    left: -20px;
+  }
   .user {
     font-size: 14px;
     padding: 6px 14px;
@@ -114,11 +119,11 @@ nav ul li a:hover {
 
   /* Hero section smaller */
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 25px;
   }
 
   .hero-content p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .hero-img img {
@@ -145,7 +150,7 @@ nav ul li a:hover {
   }
 
   .hero-img {
-    width: 100%;
+    width: 90%;
     text-align: center;
     margin-top: 20px;
   }
@@ -155,11 +160,17 @@ nav ul li a:hover {
   }
 
   .hero-content h1 {
-    font-size: 1.8rem;
+    font-size: 27px;
   }
 
   .hero-content p {
-    font-size: 14px;
+    margin-top: -10px;
+    line-height: 1.5;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .btn {
+    padding: 15px 25px;
+    font-size: 12px;
   }
 }
-  
