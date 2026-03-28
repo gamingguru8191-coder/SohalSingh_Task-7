@@ -99,6 +99,10 @@ nav ul li a:hover {
 
 /* Tablet Responsive */
 @media (max-width: 768px) {
+  /* Hide scrollbar and prevent scrolling */
+  body {
+    overflow: hidden;
+  }
   /* Navbar text smaller */
   .logo {
     font-size: 25px;
@@ -147,6 +151,11 @@ nav ul li a:hover {
   }
 }
 @media (max-width: 600px) {
+  /* Hide scrollbar and prevent scrolling */
+  body {
+    overflow: hidden;
+  }
+
   /* Hide navbar links */
   nav ul {
     display: none;
@@ -157,6 +166,7 @@ nav ul li a:hover {
     flex-direction: column;
     text-align: left;
     height: 80vh;
+    min-height: 100%;
     margin-top: 0;
     padding: 40px 5vw;
   }
