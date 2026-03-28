@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -113,8 +113,8 @@ nav ul li a:hover {
     justify-content: space-between;
     height: auto;
     margin-top: 0px;
-    margin-left: -20px;
-    padding: 40px 5vw;
+    margin-left: -20px !important;
+    padding: 40px 4vw;
   }
   .user {
     font-size: 14px;
@@ -156,11 +156,10 @@ nav ul li a:hover {
   .hero {
     flex-direction: column;
     text-align: left;
-    height: auto;
+    height: 80vh;
     margin-top: 0;
     padding: 40px 5vw;
   }
-
   .hero-content {
     width: 100%;
     margin: 0;
@@ -168,7 +167,7 @@ nav ul li a:hover {
   }
 
   .hero-img {
-    width: 80%;
+    width: 90%;
     text-align: center;
     margin-top: 20px;
   }
@@ -178,7 +177,10 @@ nav ul li a:hover {
   }
 
   .hero-content h1 {
-    font-size: 30px;
+    font-size: 1.8rem;
+    margin-top: -20px;  
+    line-height: 1.2;
+    margin-bottom: 10px;
   }
 
   .hero-content p {
